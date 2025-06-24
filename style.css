@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-left-elem a {
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    justify-self: flex-start;
+    font-size: 20px;
+}
+
+.nav-right-elem {
+    justify-self: flex-end;
+    color: rgb(0, 0, 0);
+    display: flex;
+}
+
+.nav-bar {
+    background: #ffffe8;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* margin: 1rem 2.1rem; */
+    padding: 3rem 4.2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-right: 3rem;
+    list-style: none;
+
+}
+
+.list-items li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+
+.hero-sec {
+    background: #e0d2b7;
+    display: flex;
+    justify-content: space-between;
+    height: 86vh;
+    padding: 4rem;
+}
+
+#tagline {
+    font-family: "Lilita One", sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #340100;
+}
+
+.hero-text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.hero-text-cont p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.1rem;
+    word-spacing: 1.5px;
+    color: #78400f;
+}
+
+.hero-image-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-image-cont img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    /* margin-left:8rem; */
+}
+
+.hero-sec .btn-cont {
+    margin-top: 3rem;
+}
+
+#order-now,
+#contact-us {
+    font-size: 1rem;
+    padding: 12px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#order-now {
+    margin-right: 1rem;
+    background: #78400f;
+    color: white;
+    border: 1.4px solid #78400f;
+}
+
+#contact-us {
+    border: 1.4px solid black;
+}
+
+#order-now:hover {
+    background: transparent;
+    color: #78400f;
+}
+
+#contact-us:hover {
+    background: transparent;
+}
+
+/* 
+#emojiCursor {
+    position: fixed;
+    pointer-events: none;
+    font-size: 24px;
+    z-index: 9999;
+} */
