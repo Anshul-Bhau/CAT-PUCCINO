@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html {
@@ -154,7 +153,36 @@ html {
     width: 100%;
 }
 
+.about-us .bg-img {
+    display: flex;
+    flex-direction: row;
+    gap: 13rem;
+    justify-content: space-between;
+    position: absolute;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+#cat-pack {
+    opacity: 0.4;
+    position: absolute;
+    right: -50%;
+    bottom: -5%;
+}
+
+#swigly {
+    opacity: 0.4;
+    height: 550px;
+    rotate: 90deg;
+    position: relative;
+    margin-bottom: 55px;
+    left: -55%;
+    top: 18%;
+}
+
 .about-text-cont {
+    position: relative;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -189,6 +217,8 @@ html {
 }
 
 .menu {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -196,7 +226,38 @@ html {
     background: #e0d2b7;
     padding: 3rem 2rem;
     gap: 20px;
+    overflow: hidden;
 }
+
+.menu-bg-img {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    opacity: 0.37;
+    pointer-events: none;
+}
+
+.menu-bg-img img {
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#left {
+    transform: rotate(90deg);
+    margin-left: -55px;
+}
+
+#right {
+    transform: rotate(270deg);
+    margin-right: -55px;
+}
+
 
 .menu-heading h2 {
     font-family: "Lilita One", sans-serif;
@@ -204,6 +265,12 @@ html {
     font-weight: 700;
     color: #340100;
     margin-bottom: 3rem;
+}
+
+#menu-img {
+    filter: contrast(2.5);
+    height: 3.3rem;
+    width: auto;
 }
 
 .desserts {
@@ -216,6 +283,8 @@ html {
 .first-row,
 .second-row,
 .third-row {
+    position: relative;
+    right: 2.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -323,13 +392,13 @@ html {
     font-family: "WDXL Lubrifont SC", sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    color: #626262;
+    color: #747474;
 }
 
 #name {
     font-family: "WDXL Lubrifont SC", sans-serif;
-    font: 1.5rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: #e1e1e1;
 }
 
@@ -376,7 +445,7 @@ html {
 }
 
 .time {
-    color: #626262;
+    color: #747474;
     font-family: "WDXL Lubrifont SC", sans-serif;
     font-size: 1rem;
     font-weight: 500;
